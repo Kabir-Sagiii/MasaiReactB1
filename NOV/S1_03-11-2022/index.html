@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function changeContent() {
+        //get the reference of html element
+        var h2Ref = document.getElementById("html");
+
+        h2Ref.textContent = "Hello React, You are Awesome";
+      }
+    </script>
+    <style>
+      body {
+        background-color: lightcoral;
+      }
+      div {
+        background-color: white;
+        width: 500px;
+        padding: 50px;
+        text-align: center;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 id="html">Welcome to HTML</h2>
+      <button onclick="changeContent()">React</button>
+    </div>
+  </body>
+</html>

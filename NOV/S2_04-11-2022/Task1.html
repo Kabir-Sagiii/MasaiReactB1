@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Task() {
+        return (
+          <div>
+            <div>
+              <h2> React Element </h2>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempora, quis numquam repellat corrupti porro facere perferendis
+                beatae doloribus quaerat quae cum ut exercitationem neque, quas
+                ab nam aspernatur amet modi. Perferendis nostrum quae commodi!
+                Nobis veritatis deserunt cupiditate soluta, laborum delectus.
+                Esse nobis dolorum illo, sequi quis nihil repellat possimus
+                voluptate eum nostrum tenetur non soluta architecto? Ad officiis
+                consectetur perspiciatis sit velit ut distinctio blanditiis,
+                consequuntur placeat magni nam, natus ex ratione illum atque
+                expedita esse eligendi quidem quaerat delectus dolores, culpa
+                sed modi aspernatur? Fugit iste obcaecati ex commodi, dolorum
+                dolor deserunt. Fugit similique libero quae eaque voluptates?{" "}
+              </p>{" "}
+            </div>
+          </div>
+        );
+      }
+
+      ReactDOM.render(Task(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

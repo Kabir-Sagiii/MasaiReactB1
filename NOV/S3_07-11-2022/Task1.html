@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var cssStyles = {
+        color: "red",
+        backgroundColor: "black",
+        padding: "10px",
+        textAlign: "center",
+      };
+
+      function app() {
+        var name = "Masai";
+        return (
+          <div style={cssStyles}>
+            <h2>Welcome to React {name} </h2>
+            <CreateUI />
+            <CreateUI />
+          </div>
+        );
+      }
+
+      function createPara() {
+        return (
+          <div>
+            <CreateUI />
+          </div>
+        );
+      }
+
+      function CreateUI() {
+        return (
+          <div>
+            <h4> React Element </h4>
+            <ul>
+              <li> React </li>
+              <li>Component </li>
+              <li>state</li>
+            </ul>
+          </div>
+        );
+      }
+
+      //   ReactDOM.render(app(), document.getElementById("root"));
+
+      var root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(app());
+    </script>
+  </body>
+</html>

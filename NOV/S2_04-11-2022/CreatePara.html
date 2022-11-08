@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function createPara() {
+        var pRef = document.createElement("p"); // <p>  </p>
+        pRef.innerText = "Hello Guys, Welcome to React"; // <p> Hello Guys, Welcome to React </p>
+        pRef.style.color = "red";
+
+        document.getElementById("body").appendChild(pRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <h2>Create Para Element</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod possimus
+      vitae accusantium facere aliquam corrupti, odio obcaecati quam nobis
+      provident ratione ex a unde, explicabo dolores sapiente quae aperiam dicta
+      temporibus dolor deserunt deleniti ad. Voluptatum maxime quam eveniet
+      nesciunt omnis optio at, vitae deserunt ipsam corrupti similique quibusdam
+      non tempora quia nulla autem, aperiam consectetur ut quod temporibus
+      adipisci saepe blanditiis eius doloribus! Possimus illum, alias nemo
+      corrupti pariatur ipsa quasi perspiciatis ipsum unde hic quae!
+      Consequuntur molestias accusamus excepturi, sit consequatur quam vero
+      vitae voluptate dolor iure quibusdam pariatur rem autem non magnam aut
+      explicabo odio sunt qui.
+    </p>
+    <button onclick="createPara()">Create Para</button>
+  </body>
+</html>

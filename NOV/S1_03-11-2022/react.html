@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <ul id="list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+
+    <button onclick="fnAddReact()">Add React</button>
+    <!-- <script>
+      function fnAddReact() {
+        var ulRef = document.getElementById("list");
+        var li = document.createElement("li");
+        li.textContent = "React";
+        ulRef.appendChild(li);
+      }
+    </script> -->
+    <script>
+      function AddReact() {
+        return <li> React </li>;
+      }
+    </script>
+  </body>
+</html>

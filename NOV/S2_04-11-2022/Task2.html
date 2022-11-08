@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- <button>Create UI</button>   -->
+
+    <script type="text/babel">
+      var users = {
+        name: "Darsh",
+        city: "Delhi",
+        email: "Darsh@gmail.com",
+      };
+      function createUI() {
+        var title = "React Title";
+        return (
+          <div>
+            <h2> {title} </h2>
+            <dl>
+              <dt>User Name </dt>
+              <dd> {users.name} </dd>
+              <dt>User City </dt>
+              <dd> {users.city}</dd>
+              <dt>User Email </dt>
+              <dd>{users.email} </dd>
+            </dl>
+            <img
+              src="https://www.watershed.co.uk/sites/default/files/styles/wshed_16x9_750/public/REACT_logo_4-3_0.jpg?itok=k1e3tV7q"
+              width="300"
+              height="300"
+            />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates rem obcaecati impedit earum voluptatem autem omnis illo
+              doloremque quod. Sunt voluptas porro aspernatur sequi, commodi
+              veniam modi sapiente. Ipsam, sint vel modi quam quia saepe
+              repellendus. Possimus repellat, odio amet id quia a debitis,
+              dignissimos eaque earum dolores, expedita blanditiis explicabo
+              beatae saepe! Mollitia aliquid quidem doloremque rerum veniam,
+              quis aspernatur ipsum molestias recusandae eius maiores
+              perspiciatis nemo labore minus sed consequuntur cum illo magnam?
+              Aperiam tenetur odio non. Facere ipsum, molestias dolores, quam
+              magni facilis distinctio, totam nesciunt ut ex et. Quae ducimus
+              tenetur eius sapiente magni explicabo delectus!
+            </p>
+
+            <button> Explore React</button>
+          </div>
+        );
+      }
+
+      ReactDOM.render(createUI(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function createDiv_h1() {
+        return React.createElement("div", null, [
+          React.createElement("h1", null, "Hello I am h1 inside Div"),
+          React.createElement("p", null, "Hello I am p inside Div"),
+        ]);
+      }
+
+      ReactDOM.render(createDiv_h1(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

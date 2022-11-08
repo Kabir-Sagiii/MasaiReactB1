@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createh1withJSX() {
+        var city = "Mumbai";
+        return (
+          <div>
+            <h1> Hello I am With JSX </h1>
+            <h3>I am From {city} </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
+              sequi?{" "}
+            </p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(createh1withJSX(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

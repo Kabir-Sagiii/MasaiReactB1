@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      function createParaWithReact() {
+        return React.createElement(
+          //<h1>Hello React, Thanks for Create h1 Tag</h1>
+          "h1",
+          null,
+          "Hello React, Thanks for Create h1 Tag"
+        );
+      }
+
+      ReactDOM.render(createParaWithReact(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
