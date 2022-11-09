@@ -1,0 +1,15 @@
+.home {
+    width: 800px;
+    margin: 100px auto;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+}
+.container {
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+}
