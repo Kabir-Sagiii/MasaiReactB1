@@ -1,0 +1,18 @@
+.home {
+  
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+    padding: 10px 30px 50px;
+}
+.container {
+    background-color: white;
+    width: 800px;
+        margin:100px auto;
+    /* background-color: orange; */
+    display: flex;
+    box-shadow: 0 0 10px black;
+    flex-direction: column;
+}
