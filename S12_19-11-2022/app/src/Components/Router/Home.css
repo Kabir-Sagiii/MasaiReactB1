@@ -1,0 +1,19 @@
+.subContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.homeContainer {
+    /* background-color: rgba(0,0,0,0.7); */
+    background-image: url("https://getwallpapers.com/wallpaper/full/5/a/7/795479-download-cool-sunset-backgrounds-2560x1600-photo.jpg");
+}
+
+.boxShadoww {
+    box-shadow: 0 0 10px black;
+}

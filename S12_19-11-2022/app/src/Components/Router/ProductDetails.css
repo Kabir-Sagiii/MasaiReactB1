@@ -1,0 +1,31 @@
+.productDContainer{
+    
+    margin: 50px auto;
+    width: 1200px;
+    box-shadow: 0 0 20px black;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 70px 350px;
+    
+}
+
+.topPanel {
+    /* text-align: center; */
+    
+ background-color: lightgreen;
+ grid-column: 1/3;  
+ grid-row:1/2;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.leftPanel {
+ padding: 20px;
+grid-column: 1/2;
+grid-row: 2/3
+}
+.rightPanel {
+padding: 30px;
+grid-column: 2/3;
+grid-row: 2/3
+}

@@ -1,0 +1,14 @@
+.product {
+    
+    padding: 50px;
+    box-shadow: 0 0 10px black;
+}
+table {
+    width: 100%;
+    
+}
+table tr:first-child {
+    background-color: black;
+    color: white;
+   
+}

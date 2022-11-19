@@ -1,0 +1,19 @@
+.categoryContainer {
+   
+    box-shadow: 0 0 10px black;
+      margin: 50px auto;
+      width: 1200px;
+     display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 400px;
+}
+.linkContainer {
+     background-color: black;
+  
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
