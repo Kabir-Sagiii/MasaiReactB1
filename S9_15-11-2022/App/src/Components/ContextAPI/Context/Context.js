@@ -1,5 +1,5 @@
 import React from "react";
 //create context object
-let myContext = React.createContext("Default Data");
+let myContext = React.createContext();
 
 export default myContext;

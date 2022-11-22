@@ -7,7 +7,8 @@ function B(props) {
   return (
     <div>
       <h2>B Component</h2>
-      <p>{data}</p>
+      {console.log("B is re-rendered")}
+      <p>{data.b}</p>
       <C />
     </div>
   );

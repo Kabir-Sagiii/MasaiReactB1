@@ -3,11 +3,21 @@ import B from "../B/B";
 import myContext from "../Context/Context";
 
 function A(props) {
-  const [state, setState] = useState("");
+  const [state, setState] = useState({
+    b: 10,
+    c: 20,
+    d: 30,
+  });
+
   let inputRef = useRef(null);
+
   const sendDataToB = () => {
-    setState(inputRef.current.value);
+    setState({
+      ...state,
+      b: inputRef.current.value,
+    });
   };
+
   return (
     <div>
       <h2>A Component</h2>
