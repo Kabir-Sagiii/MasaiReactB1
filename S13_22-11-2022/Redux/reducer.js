@@ -3,10 +3,24 @@ var myData = {
 };
 
 const myReducer = (storedata = myData, action) => {
-  storedata = {
-    count: action,
-  };
-  return storedata;
+  switch (action.type) {
+    case "INC_COUNT": {
+      return {
+        ...storedata,
+        count: storedata.count + action.info,
+      };
+    }
+
+    case "DEC_COUNT": {
+      return {
+        ...storedata,
+        count: storedata.count - action.info,
+      };
+    }
+    default: {
+      return storedata;
+    }
+  }
 };
 
 export default myReducer;
